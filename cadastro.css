@@ -7,6 +7,7 @@
 
 body{
     background-color: rgba(0, 0, 0, 0.938);
+    height: 100vh;
 }
 
 header {
@@ -71,21 +72,24 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 550px;
     background-color: rgba(0, 0, 0, 0.466);
     border-radius: 40px;
     color: #fff;
+    box-shadow: 0 0 114px rgba(37, 162, 211, 0.767);
 }
 
 .cadastro h1{
     font-size: 40px;
     text-align: center;
     letter-spacing: 0.1rem;
+    border-bottom: 2.3px solid  rgb(153, 151, 151);
 }
 
 .cadastro h1 span{
     color: rgb(37, 162, 211);
+    text-shadow: 0 0 18px rgb(86, 189, 230);
 }
 
 .cadastro .input-box{
@@ -104,7 +108,7 @@ main{
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #ffffff;
     padding: 20px 45px 20px 20px;
 }
 
