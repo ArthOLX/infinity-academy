@@ -116,6 +116,10 @@ main{
     color: #ffffff;
 }
 
+.cadastro .cadastre-se label a{
+    color: rgb(37, 162, 211);
+}
+
 .cadastro .btn{
     margin-top: 40px;
     width: 150px;
@@ -124,6 +128,7 @@ main{
     font-size: 16px;
     transition: all .4s;
     font-weight: 430;
+    cursor: pointer;
 }
 
 .cadastro .btn:hover{
