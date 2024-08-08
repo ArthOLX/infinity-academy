@@ -117,6 +117,8 @@ main{
 }
 
 .cadastro .cadastre-se label a{
+    text-decoration: none;
+    font-weight: 600;
     color: rgb(37, 162, 211);
 }
 
