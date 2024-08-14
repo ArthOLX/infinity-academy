@@ -11,6 +11,26 @@
     <title>Login</title>
 </head>
 
+<script>
+    document
+        .getElementById('login-form')
+        .addEventListener('submit', function (event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const criptografadoPassword = CryptoJS.SHA256(password).toString();
+
+            if (username == '' || password == '') {
+                alert('Está Vazioooooooooo');
+            } else {
+                console.log(username, criptografadoPassword);
+                document.getElementById('login-form').reset();
+                window.location.href = '/';
+            }
+        });
+
+</script>
+
 <body>
 
     <!-- <header>
@@ -41,19 +61,19 @@
 
         <div class="cadastro">
 
-            <form action="">
+            <form action="" id="login-form">
 
                 <h1>Log<span>in</span></h1>
 
                 <div class="input-box">
 
-                    <input type="text" placeholder="Nome de usuário" required>
+                    <input type="text" placeholder="Nome de usuário" id="username" required>
 
                 </div>
 
                 <div class="input-box">
 
-                    <input type="password" placeholder="senha" required>
+                    <input type="password" placeholder="senha" id="password" required>
 
                 </div>
 
@@ -70,6 +90,9 @@
         </div>
 
     </main>
+
 </body>
 
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
