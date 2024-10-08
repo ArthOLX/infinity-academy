@@ -31,7 +31,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 45px;
+  margin: 0 45px;
 
 }
 
@@ -49,10 +49,14 @@ nav .logo h1 span {
     color: rgb(37, 162, 211);
 }
 
+nav .menu{
+    margin-right: 80px;
+}
+
 nav .menu ul {
     display: flex;
     list-style: none;
-    gap: 2.1rem;
+    gap: 2.5rem;
 }
 
 nav .menu ul li a {
